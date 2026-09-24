@@ -390,9 +390,9 @@ h1 em { color: var(--red); font-weight: 900; font-style: normal; }
 
 .journey-section { margin-top: 5rem; padding-top: 5rem; border-top: 1px solid var(--line); }
 .journey-section > h2 { max-width: 760px; margin: 0 0 2rem; font-size: clamp(2.5rem, 5vw, 4.6rem); }
-.journey-track { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.journey-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
 .journey-card { position: relative; min-height: 270px; padding: 1.4rem; background: var(--white); border: 1px solid var(--line); border-radius: 1rem; }
-.journey-card:nth-child(2) { background: var(--gold); transform: translateY(1rem); }
+.journey-card:nth-child(2) { background: var(--gold); }
 .journey-card:nth-child(3) { background: var(--teal); color: var(--ink); }
 .journey-card > span { display: grid; place-items: center; width: 42px; height: 42px; margin-bottom: 2rem; color: white; background: var(--red); border-radius: 50%; font-family: var(--display); font-size: 1.2rem; }
 .journey-card h3 { margin: 0 0 .7rem; font-size: 1.6rem; line-height: 1; }
@@ -403,6 +403,10 @@ h1 em { color: var(--red); font-weight: 900; font-style: normal; }
 .footer-wrap { padding-block: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .footer-wrap p { margin: 0; font-family: var(--hand); font-size: 1.05rem; }
 .footer-wrap a { color: white; }
+
+@media (max-width: 1100px) {
+  .journey-track { grid-template-columns: repeat(3, 1fr); }
+}
 
 @media (max-width: 900px) {
   .menu-button { display: grid; place-items: center; padding: 0; }
@@ -492,10 +496,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <main id="main"><header class="page-intro"><div class="page-kicker"><span class="page-number">01</span><div><h1>About the Author</h1></div></div></header><div class="content-wrap">
 <div class="portrait-collage" aria-label="Portraits of David A. Robertson"><figure><img src="/author-lethbridge.jpg" alt="Portrait of David A. Robertson wearing a beaded necklace"><figcaption class="photo-note">David A. Robertson. University of Lethbridge.</figcaption></figure><figure><img src="/author-desk.jpg" alt="David A. Robertson seated at his desk"><figcaption class="photo-note">David A. Robertson at his desk. Image from the author’s official website.</figcaption></figure></div>
 <section class="story-grid"><div class="section-label"><h2>Who He Is</h2></div><div class="section-copy"><p>David A. Robertson is a member of Norway House Cree Nation. He is an author, podcaster, public speaker, and social advocate who lives and works in Winnipeg, Manitoba. He writes mainly for children and youth, and his books bring Indigenous identity, culture, and history to younger readers.</p></div></section>
-<section class="story-grid"><div class="section-label"><h2>What Led Him to Writing</h2></div><div class="section-copy"><p>Growing up as a Cree child in Winnipeg, Robertson felt disconnected from his heritage because his school did not teach Indigenous cultures or histories. He also found textbooks boring but was drawn to comics. He recognized that other children might also feel disconnected from their histories or find traditional textbooks unengaging. This led him to write graphic novels, a format that could both entertain young readers and teach them about Indigenous history and experiences.</p></div></section>
-<section class="journey-section" aria-labelledby="journey-title"><h2 id="journey-title">His Writing Journey</h2><div class="journey-track"><article class="journey-card"><span>1</span><h3>Comics Opened the Door</h3><p>His interest in comics showed him that stories could hold a young reader’s attention while also teaching history and culture.</p></article><article class="journey-card"><span>2</span><h3><cite>7 Generations</cite></h3><p>In 2012, his four-part graphic novel saga brought wider attention to his work through one Indigenous family’s story across three centuries and seven generations.</p></article><article class="journey-card"><span>3</span><h3>Classrooms and Libraries</h3><p>The series reached readers across Canada, where teachers and librarians used it to inspire young people and begin meaningful conversations.</p></article><article class="journey-card"><span>4</span><h3>A Growing Career</h3><p>Robertson went on to write more than 25 books. Works such as <cite>When We Were Alone</cite> and <cite>The Misewa Saga</cite> bring Indigenous characters, histories, cultures, and experiences to young readers.</p></article></div></section>
+<section class="story-grid"><div class="section-label"><h2>What Led Him to Writing</h2></div><div class="section-copy"><p>Growing up in Winnipeg, Robertson did not know about his Cree heritage because his parents kept it from him, hoping to protect him from the difficulties of growing up Indigenous. He learned he was Cree in junior high and initially denied it; much of what he had learned about First Nations people was negative. This disconnection was part of a larger family history: his grandmother attended residential school, and his father was forbidden to speak Cree at day school.</p><p>Robertson also found textbooks boring but was drawn to comics. He recognized that other children might feel disconnected from their histories or find traditional textbooks unengaging. This led him to write graphic novels, a format that could both entertain young readers and teach them about Indigenous history and experiences.</p></div></section>
+<section class="journey-section" aria-labelledby="journey-title"><h2 id="journey-title">His Writing Journey</h2><div class="journey-track"><article class="journey-card"><span>1</span><h3>Comics Opened the Door</h3><p>His interest in comics showed him that stories could hold a young reader’s attention while also teaching history and culture.</p></article><article class="journey-card"><span>2</span><h3><cite>7 Generations</cite></h3><p>In 2012, his four-part graphic novel saga brought wider attention to his work through one Indigenous family’s story across three centuries and seven generations.</p></article><article class="journey-card"><span>3</span><h3>Classrooms and Libraries</h3><p>The series reached readers across Canada, where teachers and librarians used it to inspire young people and begin meaningful conversations.</p></article><article class="journey-card"><span>4</span><h3>A Growing Career</h3><p>Robertson went on to write more than 25 books. Works such as <cite>When We Were Alone</cite> and <cite>The Misewa Saga</cite> bring Indigenous characters, histories, cultures, and experiences to young readers.</p></article><article class="journey-card"><span>5</span><h3><cite>Kīwew</cite>: Going Home</h3><p>In this five-part CBC podcast—whose Cree title means “he goes home”—Robertson traces his family history and deepens his connection to his Cree identity.</p></article></div></section>
 </div></main><footer class="site-footer"><div class="footer-wrap"><p>Next chapter: his literary contributions.</p><p><a href="/literary-contributions">Continue reading →</a></p></div></footer></body></html>
-
 
 
 
